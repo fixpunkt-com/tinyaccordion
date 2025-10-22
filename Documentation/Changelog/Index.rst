@@ -260,4 +260,12 @@ ChangeLog
    Changes
         New home url at GitHub: fixpunkt-com instead of bihor.
 
+.. container:: table-row
+
+   Version
+         8.2.3
+
+   Changes
+        Replacement for missing icon.
+
 .. ###### END~OF~TABLE ######
