@@ -1,6 +1,6 @@
 # tinyaccordion
 
-version 8.2.3
+version 9.0.0
 
 JavaScript Accordion based on the old TinyAccordion.
 
@@ -31,3 +31,7 @@ Changes in version 8.2.2:
 
 Changes in version 8.2.3:
 - Replacement for missing icon.
+
+Changes in version 9.0.0:
+- Breaking: switch from list_type to CType.
+- First version for TYPO3 14.

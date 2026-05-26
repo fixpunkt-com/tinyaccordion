@@ -7,6 +7,10 @@
 				<source>TinyAccordion</source>
 				<target>TinyAccordion</target>
 			</trans-unit>
+			<trans-unit id="tinyaccordion_description" xml:space="preserve">
+				<source>TinyAccordion für Inhalte, Seiten oder News</source>
+				<target>TinyAccordion für Inhalte, Seiten oder News</target>
+			</trans-unit>
 			<trans-unit id="tinyaccordion_title_content" xml:space="preserve">
 				<source>TinyAccordion for tt_content</source>
 				<target>TinyAccordion für tt_content</target>

@@ -17,7 +17,8 @@ call_user_func(
             ],
             [
                 SelectionController::class => ''
-            ]
+            ],
+            \TYPO3\CMS\Extbase\Utility\ExtensionUtility::PLUGIN_TYPE_CONTENT_ELEMENT
         );
         ExtensionUtility::configurePlugin(
             'Tinyaccordion',
@@ -27,7 +28,8 @@ call_user_func(
             ],
             [
                 SelectionController::class => ''
-            ]
+            ],
+            \TYPO3\CMS\Extbase\Utility\ExtensionUtility::PLUGIN_TYPE_CONTENT_ELEMENT
         );
         ExtensionUtility::configurePlugin(
             'Tinyaccordion',
@@ -37,7 +39,8 @@ call_user_func(
             ],
             [
                 SelectionController::class => ''
-            ]
+            ],
+            \TYPO3\CMS\Extbase\Utility\ExtensionUtility::PLUGIN_TYPE_CONTENT_ELEMENT
         );
         ExtensionUtility::configurePlugin(
             'Tinyaccordion',
@@ -47,7 +50,8 @@ call_user_func(
             ],
             [
                 SelectionController::class => ''
-            ]
+            ],
+            \TYPO3\CMS\Extbase\Utility\ExtensionUtility::PLUGIN_TYPE_CONTENT_ELEMENT
         );
         ExtensionUtility::configurePlugin(
             'Tinyaccordion',
@@ -57,7 +61,8 @@ call_user_func(
             ],
             [
                 SelectionController::class => ''
-            ]
+            ],
+            \TYPO3\CMS\Extbase\Utility\ExtensionUtility::PLUGIN_TYPE_CONTENT_ELEMENT
         );
         ExtensionUtility::configurePlugin(
             'Tinyaccordion',
@@ -67,13 +72,8 @@ call_user_func(
             ],
             [
                 SelectionController::class => ''
-            ]
+            ],
+            \TYPO3\CMS\Extbase\Utility\ExtensionUtility::PLUGIN_TYPE_CONTENT_ELEMENT
         );
-
-        // wizards
-        if ((new Typo3Version())->getMajorVersion() < 13) {
-            // @extensionScannerIgnoreLine
-            \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:tinyaccordion/Configuration/TSconfig/ContentElementWizard.tsconfig">');
-        }
     }
 );

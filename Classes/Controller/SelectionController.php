@@ -60,8 +60,8 @@ class SelectionController extends ActionController
             'source' => $uid,
             'dontCheckPid' => 1
         ];
-        $frontendController = $this->request->getAttribute('frontend.controller');
-        return $frontendController->cObj->cObjGetSingle('RECORDS', $conf);
+        $cObj = GeneralUtility::makeInstance(ContentObjectRenderer::class);
+        return $cObj->cObjGetSingle('RECORDS', $conf);
     }
 
     /**
@@ -142,16 +142,12 @@ class SelectionController extends ActionController
                 );
             }
 
-            if ($colPos == -1) {
-                //$whereColPos = '';
-            } else {
+            if ($colPos != -1) {
                 $queryBuilder->andWhere(
                     $queryBuilder->expr()->eq('colPos', $queryBuilder->createNamedParameter($colPos, Connection::PARAM_INT))
                 );
             }
-            if ($renderEverything) {
-                //$whereCType = '';
-            } else {
+            if (!$renderEverything) {
                 $queryBuilder->andWhere(
                     $queryBuilder->expr()->or(
                         $queryBuilder->expr()->eq('CType', $queryBuilder->createNamedParameter('text')),
@@ -291,16 +287,12 @@ class SelectionController extends ActionController
             $queryBuilder->expr()->in('pid', $queryBuilder->createNamedParameter($uidsArray, Connection::PARAM_INT_ARRAY))
         );
 
-        if ($colPos == -1) {
-            //$whereColPos = '';
-        } else {
+        if ($colPos != -1) {
             $queryBuilder->andWhere(
                 $queryBuilder->expr()->eq('colPos', $queryBuilder->createNamedParameter($colPos, Connection::PARAM_INT))
             );
         }
-        if ($renderEverything) {
-            //$whereCType = '';
-        } else {
+        if (!$renderEverything) {
             $queryBuilder->andWhere(
                 $queryBuilder->expr()->or(
                     $queryBuilder->expr()->eq('CType', $queryBuilder->createNamedParameter('text')),

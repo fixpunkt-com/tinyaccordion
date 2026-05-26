@@ -14,13 +14,13 @@ $EM_CONF[$_EXTKEY] = [
   'title' => 'JavaScript Accordion based on the old TinyAccordion',
   'description' => 'An easy-to-use extension to display pages, tt_content or news elements as an Accordion. Runs with TinyAccordion or jQuery UI-Accordion.',
   'category' => 'plugin',
-  'version' => '8.2.3',
+  'version' => '9.0.0',
   'state' => 'stable',
   'author' => 'Kurt Gusbeth',
   'author_company' => 'fixpunkt für digitales GmbH',
   'constraints' => [
     'depends' => [
-      'typo3' => '12.4.0-13.4.99'
+      'typo3' => '13.4.0-14.3.99'
     ]
   ]
 ];

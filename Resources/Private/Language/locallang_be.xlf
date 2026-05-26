@@ -6,6 +6,9 @@
 			<trans-unit id="tinyaccordion_title" xml:space="preserve">
 				<source>TinyAccordion</source>
 			</trans-unit>
+			<trans-unit id="tinyaccordion_description" xml:space="preserve">
+				<source>TinyAccordion for Content, pages or news</source>
+			</trans-unit>
 			<trans-unit id="tinyaccordion_title_content" xml:space="preserve">
 				<source>TinyAccordion for tt_content</source>
 			</trans-unit>

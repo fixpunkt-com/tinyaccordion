@@ -268,4 +268,14 @@ ChangeLog
    Changes
         Replacement for missing icon.
 
+.. container:: table-row
+
+   Version
+         9.0.0
+
+   Changes
+        Breaking: switch from list_type to CType.
+
+        First version for TYPO3 14.
+
 .. ###### END~OF~TABLE ######
